@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>wanderwithjjazzy</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <style>
+            body,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5 {
+                font-family: "Raleway", sans-serif
+            }
+
+            .w3-third img {
+                margin-bottom: -6px;
+                opacity: 0.8;
+                cursor: pointer
+            }
+
+            .w3-third img:hover {
+                opacity: 1
+            }
+        </style>
+    </head>
+<body class="w3-light-grey l4-content" style="max-width:1600px">
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center"
+        style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+        <h3 class="w3-padding-64 w3-center"><b>JAZ<br>GAZA</b></h3>
+        <a href="javascript:void(0)" onclick="w3_close()"
+            class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">PHOTOGRAPHY</a>
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a>
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+    </nav>
+
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+        <span class="w3-left w3-padding">WanderwithJjazzy</span>
+        <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+        title="close side menu" id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:300px">
+
+        <!-- Push down content on small screens -->
+        <div class="w3-hide-large" style="margin-top:83px"></div>
+
+        <!-- Photo grid -->
+        <div class="w3-row">
+            <div class="w3-third">
+                <img src="calaguas6.jpg" style="width:100%" onclick="onClick(this)"
+                    alt="𝑪𝒂𝒍𝒂𝒈𝒖𝒂𝒔🌾// 𝙥𝙖𝙧𝙖𝙙𝙞𝙨𝙚 - 𝚊 𝚙𝚕𝚊𝚌𝚎 𝚘𝚏 𝚎𝚡𝚝𝚛𝚎𝚖𝚎 𝚋𝚎𝚊𝚞𝚝𝚢, 𝚍𝚎𝚕𝚒𝚐𝚑𝚝, 𝚘𝚛 𝚑𝚊𝚙𝚙𝚒𝚗𝚎𝚜𝚜.">
+                <img src="baguio12.jpg" style="width:100%" onclick="onClick(this)"
+                    alt="Cold summer night in Baguio">
+                <img src="bolinao3.jpg" style="width:100%" onclick="onClick(this)" alt="The Beach. Me. Alone. Beautiful">
+            </div>
+
+            <div class="w3-third">
+                <img src="baguio1.jpg" style="width:100%" onclick="onClick(this)"
+                    alt="The Bridal Veil Falls from Baguio City">
+                <img src="baguio9.jpg" style="width:100%" onclick="onClick(this)"
+                    alt="Above the clouds.Bliss Skies.">
+                <img src="shot5.jpeg" style="width:100%" onclick="onClick(this)"
+                    alt="Cape Bojeador Lighthouse, Burgos, Ilocos Norte ">
+            </div>
+
+            <div class="w3-third">
+                <img src="shot8.png" style="width:100%" onclick="onClick(this)" alt="I just love u, Balanga Bataan">
+                <img src="shot7.png" style="width:100%" onclick="onClick(this)" alt="A girl, and a sunset passing">
+                <img src="shot10.jpg" style="width:100%" onclick="onClick(this)" alt="Takipsilim">
+            </div>
+        </div>
+
+      
+
+        <!-- Modal for full size images on click-->
+        <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+            <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                <img id="img01" class="w3-image">
+                <p id="caption"></p>
+            </div>
+        </div>
+
+        <!-- About section -->
+        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+            <h4><b>About Me</b></h4>
+            <img src="me.jpg" alt="Me" class="w3-image w3-padding-32" width="600" height="650">
+            <div class="w3-content w3-justify" style="max-width:600px">
+                <h4>Jaz Gaza</h4>
+                <p>Hi I'm Jaz! I am not a professional photographer, I am just a dreamer, who spends a lot taking pictures of myself, nature and almost everything. I just love taking pictures as my recollection of memories for my travels. I have loved photography since I was a teenager growing up travelling with my family. I naturally learned how much photography plays an important role in my life- It connects to every memories, it reminds me of people, places, feelings, and stories.  I find beauty in the things and people around, helps me to see things in a different light. A wonderful therapeutic benefit of photography, is that it can help me see the beauty surrounding us we just have take a moment to stop and look!
+                </p>
+	<p>Please document your life. Take pictures and videos or keep a journal. The most insignificant moments will become some of your favourite memories one day. Capture each core memory. Embrace your experiences and share your perspective. You'll love looking back at the memories, reliving the journey, and cherishing them for a lifetime.
+                </p>
+                <p>mail: jzmgngaza1017@gmail.com</p>
+                <p>cp. no.: +639-569-002-809</p>
+                <hr class="w3-opacity">
+               
+
+        <!-- Contact section -->
+        <div class="w3-container w3-light-pink w3-padding-32 w3-padding-large" id="contact">
+            <div class="w3-content" style="max-width:600px">
+                <h4 class="w3-center"><b>Contact Me</b></h4>
+                <p>Here's my Socials</p>
+                <form action="/action_page.php" target="_blank">
+                    <div class="w3-section">       
+                  <a href="https://www.facebook.com/jjaazzgz/"><img src="https://i.pinimg.com/564x/1a/f9/de/1af9de3fde7b35de7b0f4fdbcf65a875.jpg" height="40"
+width="45"> </a>
+                   </div>
+                    <div class="w3-section">
+                      <a href="https://www.instagram.com/jjaazz.gz/"><img src="https://i.pinimg.com/564x/41/be/54/41be54b580df9db9930ed79462c9a87e.jpg" height="40"
+width="45"> </a>
+                  
+                    
+     
+             </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-container w3-padding-32 w3-grey">
+            <div class="w3-row-padding">
+                <div class="w3-third">
+                    <h3>Copyright</h3>
+                    <p>© 2023 Jjaazzy. Copyright 2023 Jjazzy</p>
+                </div>
+
+                <div class="w3-third">
+                    <h3>OTHER BLOG POSTS</h3>
+                    <ul class="w3-ul">
+                        <li class="w3-padding-16 w3-hover-black">
+                             <a href="https://www.boboandchichi.com/behold-beauty-bohol/"><img src="calaguas_island_philippines.jpg" class="w3-left w3-margin-right" style="width:50px"> </a>
+                            <span class="w3-large">Beauty of Bohol</span><br></a>
+                            <span>boboandchichi</span>
+                        </li>
+                        <li class="w3-padding-16 w3-hover-black">
+                          <a href="https://www.thephilippines.com/2015/10/reasons-to-visit-beautiful-calaguas-island-philippines.html#google_vignette"><img src="https://www.boboandchichi.com/wp-content/uploads/Bohol-Cover-787x525.jpg" class="w3-left w3-margin-right" style="width:50px"> </a>
+                            <span class="w3-large">Beautiful Calaguas Island, Philippines - 5 Reasons to Visit</span><br>
+                            <span>thephilippines</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="w3-third">
+                    <h3>POPULAR TAGS</h3>
+                    <p>
+                          <span class="w3-tag w3-black w3-margin-bottom"> <a href="https://wanderingearl.com/mini-guide-to-travel-in-the-philippines/">Travel Blog</a></span>
+                        <span class="w3-tag w3-black w3-margin-bottom"> <a href="https://travelista.club/guides/baguio-city-from-the-eyes-of-a-local">Baguio</a></span>
+                        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"> <a href="https://everthewanderer.com/bohol/">Bohol</a></span>
+                        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"> <a href="https://www.youtube.com/watch?v=9zhPCiRUMkg">Photography</a></span>
+                        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"> <a href="https://www.ambot-ah.com/place/asia/philippines/luzon/ilocos-sur/">Ilocos Sur</a></span>
+                        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"> <a href="https://wanderingearl.com/mini-guide-to-travel-in-the-philippines/">Philippines</a></span>
+                        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"> <a href="https://joansfootprints.com/2025/01/16/complete-boracay-diy-travel-guide-for-first-timers-itinerary-budget/">Boracay</a></span>
+                        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"> <a href="https://www.awanderfulsole.com/calaguas-island-budget-travel-guide-itinerary-and-why-its-better-than-boracay/">Calaguas, Camarines Sur</a></span>    
+                         <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"> <a href="https://christianntravelblog.wordpress.com/">Bataan</a></span>
+                         <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"> <a href="https://www.kingtolentino.com/blog/baler-aurora-weekend-adventure">Baler</a></span>
+                         <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"> <a href="https://diamondintheroughblog.com/2018/06/22/things-i-love-about-my-ilocos-trip/">Ilocos Norte</a></span>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <div class="w3-black w3-center w3-padding-24">Made by <a href="https://jzmgn.github.io/jazy/" title="spaces" target="_blank" class="w3-hover-opacity">Jjazzy</a></div>
+
+
+        <!-- End page content -->
+    </div>
+
+    <script>
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+    </script>
+
+
+</body>
+
+</html>
